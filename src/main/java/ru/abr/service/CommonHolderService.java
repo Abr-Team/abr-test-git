@@ -9,4 +9,6 @@ public interface CommonHolderService {
 
     List<Object> getPositionRisk(String symbol, String apiKey);
 
+    Object getAccount(String apiKey);mlverpv
+
 }
