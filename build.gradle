@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.1'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
+
+group 'org.dev.barsukov'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    Spring starters
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.7.0'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.0'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+    }
+
+test {
+    useJUnitPlatform()
+}
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
