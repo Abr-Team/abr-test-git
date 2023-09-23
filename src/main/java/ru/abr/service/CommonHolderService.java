@@ -9,6 +9,10 @@ public interface CommonHolderService {
 
     List<Object> getPositionRisk(String symbol, String apiKey);
 
-    Object getAccount(String apiKey);mlverpv
+    Object getAccount(String apiKey);
+
+    Object getRestrictions(String apiKey);
+
+    Object getIncomeAsyncByIdReq(String apiKey, Long id);
 
 }
